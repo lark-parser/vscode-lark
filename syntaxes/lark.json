@@ -1,0 +1,81 @@
+{
+    "patterns": [
+        {
+            "comment": "Lark comment line",
+            "match": "//.*",
+            "name": "comment.line.double-slash"
+        },
+        {
+            "comment": "Lark ignore directive",
+            "match": "%ignore",
+            "name": "keyword.other"
+        },
+        {
+            "comment": "Lark import directive",
+            "match": "(%import) [a-z0-9]+.",
+            "captures": {
+                "1": {
+                    "name": "keyword.control"
+                }
+            }
+        },
+        {
+            "comment": "Lark (case-insensitive) string",
+            "match": "(\"(([^\"\\\\]|\\\\.)*)\")(i)?",
+            "captures": {
+                "1": {
+                    "name": "string.quoted.double"
+                },
+                "4": {
+                    "name": "storage.modifier"
+                }
+            }
+        },
+        {
+            "comment": "Lark *case-insensitive) regular expression",
+            "match": "(/([^/\\\\]|\\\\.)*/)(i)?",
+            "captures": {
+                "1": {
+                    "name": "string.regexp"
+                },
+                "3": {
+                    "name": "storage.modifier"
+                }
+            }
+        },
+        {
+            "comment": "Lark rule definition",
+            "match": "([a-z0-9_]+)",
+            "captures": {
+                "1": {
+                    "name": "support.variable"
+                }
+            }
+        },
+        {
+            "comment": "Lark terminal definition",
+            "match": "([A-Z0-9_]+)",
+            "captures": {
+                "1": {
+                    "name": "support.type"
+                }
+            }
+        },
+        {
+            "comment": "Lark optional alias",
+            "match": "->",
+            "name": "storage.modifier"
+        },
+        {
+            "comment": "Lark quantifier",
+            "match": "[\\?\\*\\+]",
+            "name": "storage.modifier"
+        },
+        {
+            "comment": "Lark or operator",
+            "match": "\\|",
+            "name": "keyword.operator"
+        }
+    ],
+    "scopeName": "source.lark"
+}

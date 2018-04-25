@@ -1,0 +1,43 @@
+{
+    "name": "vscode-lark",
+    "version": "0.0.0",
+    "publisher": "dirk-thomas",
+    "engines": {
+        "vscode": "^1.2.0"
+    },
+    "license": "Apache-2.0",
+    "displayName": "Lark grammar syntax support",
+    "description": "Language support for Lark grammar files",
+    "categories": [
+        "Languages"
+    ],
+    "homepage": "https://marketplace.visualstudio.com/items?itemName=dirk-thomas.vscode-lark",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dirk-thomas/vscode-lark"
+    },
+    "bugs": {
+        "url": "https://github.com/dirk-thomas/vscode-lark/issues"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "lark",
+                "aliases": [
+                    "Lark"
+                ],
+                "extensions": [
+                    ".lark"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "lark",
+                "scopeName": "source.lark",
+                "path": "./syntaxes/lark.json"
+            }
+        ]
+    }
+}
