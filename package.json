@@ -1,6 +1,6 @@
 {
     "name": "vscode-lark",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "publisher": "dirk-thomas",
     "engines": {
         "vscode": "^1.2.0"
