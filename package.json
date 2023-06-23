@@ -29,7 +29,11 @@
                 "extensions": [
                     ".lark"
                 ],
-                "configuration": "./language-configuration.json"
+                "configuration": "./language-configuration.json",
+                "icon": {
+                    "dark": "./assets/lark-icon-white.png",
+                    "light": "./assets/lark-icon.png"
+                }
             }
         ],
         "grammars": [
