@@ -9,7 +9,7 @@
     "displayName": "Lark grammar syntax support",
     "description": "Language support for Lark grammar files",
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "homepage": "https://marketplace.visualstudio.com/items?itemName=dirk-thomas.vscode-lark",
     "repository": {
